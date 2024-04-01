@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        .left-align {
+            text-align: left;
+        }
+        
+        .left-align button {
+            width: 70px;
+            margin-left: 0;
+        }
+        
+        .title {
+            padding-left: -20px;
+        }
+        
+        #nama {
+            width: 50px;
+        }
+        
+        #password {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="POST">
+        <table>
+            <tr>
+                <td class="title">Nama</td>
+                <td class="fixed-title">:</td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+            <tr>
+                <td class="title">Password</td>
+                <td class="fixed-title">:</td>
+                <td><input type="text" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td class="title">Tanggal Lahir</td>
+                <td class="fixed-title">:</td>
+                <td>
+                    <input type="number" name="tanggal" placeholder="Tanggal" style="width: 50px;">/
+                    <input type="number" name="bulan" placeholder="Bulan" style="width: 50px;">/
+                    <input type="number" name="tahun" placeholder="Tahun" style="width: 70px;"> (hh/bb/tttt)
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Jenis Kelamin</td>
+                <td class="fixed-title">:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki<br>
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Jurusan</td>
+                <td class="fixed-title">:</td>
+                <td>
+                    <select name="jurusan">
+                    <option value="IMT">IMT</option>
+                    <option value="Informatika">Informatika</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Hobby</td>
+                <td class="fixed-title">:</td>
+                <td>
+                    <input type="checkbox" name="hobi[]" value="Adventure"> Adventure
+                    <input type="checkbox" name="hobi[]" value="Travelling"> Travelling
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Alamat</td>
+                <td class="fixed-title">:</td>
+                <td><textarea name="alamat" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td class="title">Semester</td>
+                <td class="fixed-title">:</td>
+                <td>
+                    <select name="semester">
+                    <option value="Semester Satu">Semester Satu</option>
+                    <option value="Semester Dua">Semester Dua</option>
+                    <option value="Semester Tiga">Semester Tiga</option>
+                </select>
+                </td>
+            </tr>
+        </table>
+        <td class="left-align" colspan="5"><input type="submit" value="Kirim"></td>
+    </form>
+
+</body>
+
+</html>
